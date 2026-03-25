@@ -48,7 +48,7 @@ Fiz esse projeto para facilitar o trabalho da minha contagem de pallets no meut 
 
            Como executar o projeto:
 
--Clone ou baixe esse repositório: [https://github.com/Epic10ka/Gerenciador-de-Estacionamento](https://github.com/Epic10ka/Pallets)
+-Clone ou baixe esse repositório: https://github.com/Epic10ka/Pallets/edit/main
 
 -Abra a pasta do projeto
 
