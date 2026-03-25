@@ -1,4 +1,4 @@
-# Sistema-de-Pallets
+# Sistema de Pallets
 ## 🎥 Demonstração do sistema
 
 ### Menu principal
@@ -48,7 +48,7 @@ Fiz esse projeto para facilitar o trabalho da minha contagem de pallets no meut 
 
            Como executar o projeto:
 
--Clone ou baixe esse repositório: https://github.com/Epic10ka/Pallets/edit/main
+-Clone ou baixe esse repositório: https://github.com/Epic10ka/Pallets
 
 -Abra a pasta do projeto
 
