@@ -61,3 +61,16 @@ Improve problem-solving skills and gain practical experience in software develop
 
 ```bash
 git clone https://github.com/Epic10ka/Pallets
+```
+
+2. Navigate to the project folder:
+
+```bash
+cd pallets_counting
+```
+
+3. Run the program:
+
+```bash
+python pallets.py
+```
