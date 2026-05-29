@@ -72,5 +72,5 @@ cd pallets_counting
 3. Run the program:
 
 ```bash
-python pallets.py
+python_pallets.py
 ```
