@@ -75,7 +75,7 @@ def box(msg):
 #Menu principal
 def menu_p():
     print()
-    print(f'  {white}--------------- {blue}SUPER FRIO{white} --------------- \n'.center(82))
+    print(f'  {white}--------------- {blue}EMPRESA{white} --------------- \n'.center(82))
     print('╔──────────────────────────────────────╗'.center(60))
     print('|         CONTAGEM DE PALLETS          |'.center(60))
     print('╠══════════════════════════════════════╣'.center(60))
@@ -135,15 +135,16 @@ def modo_fileiras(contagens, tipo, nome):
 
 #Modo B
 def modo_avulso(contagens, tipo, nome):
-    print(f'            [AVULSO] - {nome}')
+    print(f'\n                   [AVULSO] - {nome}')
     print()
-    print('             Digite a quantidade de grupos de pallet |ENTER em branco para parar|')
+    print('            Digite a quantidade de grupos de pallet ')
+    print('                |ENTER em branco para parar|')
     print()
     subtotal_sessao = 0
     print()
 
     while True:
-        entrada = input('           Qtd do grupo (ENTER para parar): ').strip()
+        entrada = input('\n           Qtd do grupo (ENTER para parar): ').strip()
         if entrada == '':
             break
         try:
@@ -151,9 +152,12 @@ def modo_avulso(contagens, tipo, nome):
             subtotal_sessao += qtd
             contagens[tipo] += qtd
             data_save(contagens)
-            print(f'      |+{qtd}|')
-            print(f'      |Sessão: {subtotal_sessao}')
-            print(f'      |Total {nome}: {contagens[tipo]}')
+            print()
+            print(f'┌────────────────────────┐'.center(58))
+            print(f'     |+{green}{qtd}{white}       '.center(75))
+            print(f'      |Sessão: {subtotal_sessao}     '.center(53))
+            print(f'     |Total {nome}: {contagens[tipo]}      '.center(60))
+            print(f'└────────────────────────┘'.center(58))
         except ValueError:
             print('            \033[1;91mERRO\033[m. Digite apenas números inteiros.')
 
@@ -176,7 +180,6 @@ def slp_sht(contagens):
 
     contagens['slip_sheet'] = total
     data_save(contagens)
-    print(total)
 
 
 #'dispatcher' (escolher o modo e chamar função)
