@@ -178,7 +178,7 @@ def slp_sht(contagens):
         except ValueError:
             num_error('NÚMERO INVÁLIDO')
 
-    contagens['slip_sheet'] = total
+    contagens['slip_sheet'] += total
     data_save(contagens)
 
 
